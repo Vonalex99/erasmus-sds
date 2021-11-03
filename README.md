@@ -2,10 +2,11 @@
 Our project aims to create 
 
 ## Roles and responsabilities 
-- Kilian (Product Owner) is responsible for:
-  - Create 
 
 - Goncalo (Scrum Master) is responsible for:
+  - Make
+
+- Kilian (Product Owner) is responsible for:
 
 - Debora (Developper) is responsible for:
 
