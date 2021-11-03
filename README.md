@@ -1,5 +1,5 @@
 # Erasmus+ SDS project
-Our project aims to create 
+Our project aims to create a platform for Erasmus students attending PUT. This platform will allow students to seek all the information needed for their exchange program in PUT.
 
 ## Roles and responsabilities 
 
@@ -8,9 +8,10 @@ Our project aims to create
 
 - Kilian (Product Owner) is responsible for:
 
-- Debora (Developper) is responsible for:
+- Debora (Developer) is responsible for:
+  - The platform's design
 
-- Alexandre (Developper) is responsible for:
+- Alexandre (Developer) is responsible for:
 
 ## Communication strategies
 
