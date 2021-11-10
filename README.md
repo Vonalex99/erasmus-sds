@@ -5,7 +5,8 @@ Our project aims to create a platform for Erasmus students attending PUT. This p
 
 - Goncalo (Scrum Master) is responsible for:
   - Team communication.
-  - Making sure everyone is 
+  - Clearing obstacles to the team progress.
+  - Ensuring Scrum events happen and the outcome is positive.
   - Coaching the team members in Scrum and self-management.
 
 - Kilian (Product Owner) is responsible for:
@@ -16,10 +17,13 @@ Our project aims to create a platform for Erasmus students attending PUT. This p
 
 - Debora (Developer) is responsible for:
   - The platform's design
+  - Creating a plan for the Sprint.
+  - 
 
 - Alexandre (Developer) is responsible for:
   -Design and Product Backend
 
+- Pedro (Developer) is responsible for:
 ## Communication strategies
 
 
