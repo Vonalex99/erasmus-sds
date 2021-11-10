@@ -16,6 +16,7 @@ Our project aims to create a platform for Erasmus students attending PUT. This p
   - The platform's design
 
 - Alexandre (Developer) is responsible for:
+  -Design and Product Backend
 
 ## Communication strategies
 
