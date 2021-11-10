@@ -4,6 +4,8 @@ Our project aims to create a platform for Erasmus students attending PUT. This p
 ## Roles and responsabilities 
 
 - Goncalo (Scrum Master) is responsible for:
+  - Team communication.
+  - Making sure everyone is 
   - Coaching the team members in Scrum and self-management.
 
 - Kilian (Product Owner) is responsible for:
