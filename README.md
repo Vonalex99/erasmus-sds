@@ -38,12 +38,12 @@ To communicate during the project the team members will use Discord, and for tas
 ### 1. Clone project
 
 ### 2. Run the project:
-  '''shell
+  ```shell
   npm i
   npm start
-  '''
+  ```
   
 ### 3. Build:
-  '''shell
+  ```shell
   npm run build
-  '''
+  ```
