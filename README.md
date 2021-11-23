@@ -35,11 +35,11 @@ To communicate during the project the team members will use Discord, and for tas
 
 ## Installation manual
 
-1. Clone project
+#1. Clone project
 
-2. Run the project:
+#2. Run the project:
   npm i
   npm start
   
-3. Build
+#3. Build
   npm run build
