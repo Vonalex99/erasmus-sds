@@ -16,15 +16,34 @@ Our project aims to create a platform for Erasmus students attending PUT. This p
   - Makine sure the team understands the items.
 
 - Debora (Developer) is responsible for:
-  - The platform's design
+  - The platform's design.
   - Creating a plan for the Sprint.
-  - 
+  - Checking that the increment meets the Definition of done.
 
 - Alexandre (Developer) is responsible for:
-  -Design and Product Backend
+  - Design and Product Backend.
+  - Creating a plan for the Sprint.
+  - Checking that the increment meets the Definition of done.
 
 - Pedro (Developer) is responsible for:
+  - Creating a plan for the Sprint.
+  - Checking that the increment meets the Definition of done.
+
 ## Communication strategies
 
+To communicate during the project the team members will use Discord, and for task management they will use Slack.
 
 ## Installation manual
+
+### 1. Clone project
+
+### 2. Run the project:
+  ```shell
+  npm i
+  npm start
+  ```
+  
+### 3. Build:
+  ```shell
+  npm run build
+  ```

@@ -44,6 +44,7 @@ class App extends Component {
     ReactGA.pageview(window.location.pathname);
   }
 
+
   getResumeData() {
     $.ajax({
       url: "./resumeData.json",

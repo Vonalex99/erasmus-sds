@@ -28,7 +28,7 @@ class About extends Component {
               />
             </div>
             <div className="nine columns main-col">
-              <h2>About Me</h2>
+              <h2>About The Website</h2>
 
               <p>{bio}</p>
               <div className="row">
@@ -43,16 +43,7 @@ class About extends Component {
                       {city} {state}, {zip}
                     </span>
                     <br />
-                    <span>{phone}</span>
-                    <br />
                     <span>{email}</span>
-                  </p>
-                </div>
-                <div className="columns download">
-                  <p>
-                    <a href={resumeDownload} className="button">
-                      <i className="fa fa-download"></i>Download Resume
-                    </a>
                   </p>
                 </div>
               </div>
