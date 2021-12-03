@@ -9,6 +9,29 @@ import Resume from "./Components/Resume";
 import Contact from "./Components/Contact";
 import Portfolio from "./Components/Portfolio";
 
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyCcTC0A2npdsGwpgbrt6rgqOjge2z4zY0A",
+  authDomain: "sds2-erasmus.firebaseapp.com",
+  projectId: "sds2-erasmus",
+  storageBucket: "sds2-erasmus.appspot.com",
+  messagingSenderId: "203451554480",
+  appId: "1:203451554480:web:8f56e3cff3f243ee4db975",
+  measurementId: "G-1PM1TNEPXL"
+};
+
+// Initialize Firebase
+const appInit = initializeApp(firebaseConfig);
+const analyticsInit = getAnalytics(appInit);
+
+
 class App extends Component {
   constructor(props) {
     super(props);
