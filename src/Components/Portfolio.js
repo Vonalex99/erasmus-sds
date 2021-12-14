@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import Zmage from "react-zmage";
 import Fade from "react-reveal";
-
+import Button from '@mui/material/Button';
+import LaDialog from './CreateLaComponents/LaDialog'
+import StudentInformation from './CreateLaComponents/StudentInformation'
 let id = 0;
 class Portfolio extends Component {
   render() {
@@ -24,8 +26,9 @@ class Portfolio extends Component {
       <section id="portfolio">
         <Fade left duration={1000} distance="40px">
           <div className="row">
-            <div className="twelve columns collapsed">
+            <div className="twelve columns collapsed" >
               <h1>Need help with your Learning Agreement?</h1>
+              <LaDialog></LaDialog>
             </div>
           </div>
         </Fade>
