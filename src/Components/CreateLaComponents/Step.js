@@ -13,10 +13,10 @@ const steps = [
 
 ];
 
-export default function HorizontalLabelPositionBelowStepper() {
+export default function HorizontalLabelPositionBelowStepper(props) {
   return (
     <Box sx={{ width: '100%' }}>
-      <Stepper activeStep={1} alternativeLabel>
+      <Stepper activeStep={props.page} alternativeLabel>
         {steps.map((label) => (
           <Step key={label}>
             <StepLabel><div style={{fontSize: '12px'}}>{label}</div></StepLabel>

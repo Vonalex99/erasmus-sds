@@ -12,6 +12,11 @@ import Portfolio from "./Components/Portfolio";
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+
+import { getDatabase, ref, onValue } from "firebase/database";
+import { getAuth } from "firebase/auth";
+import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
+
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -31,6 +36,9 @@ const firebaseConfig = {
 const appInit = initializeApp(firebaseConfig);
 const analyticsInit = getAnalytics(appInit);
 
+const db = getFirestore(appInit);
+
+
 
 class App extends Component {
   constructor(props) {
@@ -44,6 +52,12 @@ class App extends Component {
     ReactGA.pageview(window.location.pathname);
   }
 
+  
+  async getCities() {
+    const citySnapshot = await this.appInit.database();
+    return citySnapshot;
+  }
+  
 
   getResumeData() {
     $.ajax({
@@ -63,6 +77,8 @@ class App extends Component {
   componentDidMount() {
     this.getResumeData();
   }
+
+
 
   render() {
     return (

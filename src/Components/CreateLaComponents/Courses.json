@@ -1,0 +1,906 @@
+{ 
+  "AI": [
+    {
+      "course_id": "1",
+      "course_name": "artificial_intelligence",
+      "faculty": "computing",
+      "area": "artificial_intelligence",
+      "level": "bachelor",
+      "course_ects": 5,
+      "number_of_hours": "60",
+      "semester": "winter",
+      "course_card_link": "http://",
+      "course_comments": [
+        {
+          "comment_id": "new Date().getTime()",
+          "comment_date": "11/12/2021",
+          "comment": "test_1",
+          "likes": 1,
+          "disLikes": 2
+        }
+        ]
+    },
+    {
+      "course_id": "0",
+      "course_name": "artificial_life_and_cognitive_science",
+      "faculty": "computing",
+      "area": "artificial_intelligence",
+      "level": "bachelor",
+      "course_ects": 3,
+      "number_of_hours": "15",
+      "semester": "winter",
+      "course_card_link": "http://",
+      "course_comments": [
+        {
+          "comment_id": "new Date().getTime()",
+          "comment_date": "11/12/2021",
+          "comment": "test_0",
+          "likes": 1,
+          "disLikes": 2
+        }
+        ]
+    },
+    {
+      "course_id": "2",
+      "course_name": "basic_health_and_safety_training",
+      "faculty": "computing",
+      "area": "artificial_intelligence",
+      "level": "bachelor",
+      "course_ects": 0,
+      "number_of_hours": "4",
+      "semester": "winter",
+      "course_card_link": "http://",
+      "course_comments": [
+        {
+          "comment_id": "new Date().getTime()",
+          "comment_date": "12/12/2021",
+          "comment": "test_2",
+          "likes": 12,
+          "disLikes": 22
+        }
+        ]
+    },
+    {
+      "course_id": "3",
+      "course_name": "calculus_I",
+      "faculty": "computing",
+      "area": "artificial_intelligence",
+      "level": "bachelor",
+      "course_ects": 5,
+      "number_of_hours": "60",
+      "semester": "winter",
+      "course_card_link": "http://",
+      "course_comments": [
+        {
+          "comment_id": "new Date().getTime()",
+          "comment_date": "11/12/2021",
+          "comment": "test_3",
+          "likes": 13,
+          "disLikes": 23
+        }
+        ]
+    },
+    {
+      "course_id": "4",
+      "course_name": "calculus_Ii",
+      "faculty": "computing",
+      "area": "artificial_intelligence",
+      "level": "bachelor",
+      "course_ects": 5,
+      "number_of_hours": "60",
+      "semester": "winter",
+      "course_card_link": "http://",
+      "course_comments": [
+        {
+          "comment_id": "new Date().getTime()",
+          "comment_date": "10/12/2021",
+          "comment": "test_4",
+          "likes": 14,
+          "disLikes": 24
+        }
+        ]
+    },
+    {
+      "course_id": "5",
+      "course_name": "career_resources",
+      "faculty": "computing",
+      "area": "artificial_intelligence",
+      "level": "bachelor",
+      "course_ects": 2,
+      "number_of_hours": "30",
+      "semester": "winter",
+      "course_card_link": "http://",
+      "course_comments": [
+        {
+          "comment_id": "new Date().getTime()",
+          "comment_date": "11/12/2021",
+          "comment": "test_5",
+          "likes": 15,
+          "disLikes": 25
+        }
+        ]
+    },
+    {
+      "course_id": "6",
+      "course_name": "combinatorial_optimization",
+      "faculty": "computing",
+      "area": "artificial_intelligence",
+      "level": "bachelor",
+      "course_ects": 5,
+      "number_of_hours": "60",
+      "semester": "winter",
+      "course_card_link": "http://",
+      "course_comments": [
+        {
+          "comment_id": "new Date().getTime()",
+          "comment_date": "10/12/2021",
+          "comment": "test_6",
+          "likes": 16,
+          "disLikes": 26
+        }
+        ]
+    },
+    {
+      "course_id": "7",
+      "course_name": "computer_architecture_with_low_level_programming",
+      "faculty": "computing",
+      "area": "artificial_intelligence",
+      "level": "bachelor",
+      "course_ects": 3,
+      "number_of_hours": "30",
+      "semester": "winter",
+      "course_card_link": "http://",
+      "course_comments": [
+        {
+          "comment_id": "new Date().getTime()",
+          "comment_date": "12/12/2021",
+          "comment": "test_7",
+          "likes": 17,
+          "disLikes": 27
+        }
+        ]
+    },
+    {
+      "course_id": "8",
+      "course_name": "computer_networks",
+      "faculty": "computing",
+      "area": "artificial_intelligence",
+      "level": "bachelor",
+      "course_ects": 4,
+      "number_of_hours": "60",
+      "semester": "summer",
+      "course_card_link": "http://",
+      "course_comments": [
+        {
+          "comment_id": "new Date().getTime()",
+          "comment_date": "11/12/2021",
+          "comment": "test_8",
+          "likes": 18,
+          "disLikes": 28
+        }
+        ]
+    },
+    {
+      "course_id": "9",
+      "course_name": "data_compression_methods",
+      "faculty": "computing",
+      "area": "artificial_intelligence",
+      "level": "bachelor",
+      "course_ects": 6,
+      "number_of_hours": "30",
+      "semester": "winter",
+      "course_card_link": "http://",
+      "course_comments": [
+        {
+          "comment_id": "new Date().getTime()",
+          "comment_date": "10/12/2021",
+          "comment": "test_9",
+          "likes": 19,
+          "disLikes": 29
+        }
+        ]
+    },
+    {
+      "course_id": "10",
+      "course_name": "data_visualization",
+      "faculty": "computing",
+      "area": "artificial_intelligence",
+      "level": "bachelor",
+      "course_ects": 3,
+      "number_of_hours": "30",
+      "semester": "summer",
+      "course_card_link": "http://",
+      "course_comments": [
+        {
+          "comment_id": "new Date().getTime()",
+          "comment_date": "11/12/2021",
+          "comment": "test_10",
+          "likes": 1,
+          "disLikes": 2
+        }
+        ]
+    },
+    {
+      "course_id": "11",
+      "course_name": "database_systems",
+      "faculty": "computing",
+      "area": "artificial_intelligence",
+      "level": "bachelor",
+      "course_ects": 5,
+      "number_of_hours": "60",
+      "semester": "winter",
+      "course_card_link": "http://",
+      "course_comments": [
+        {
+          "comment_id": "new Date().getTime()",
+          "comment_date": "10/12/2021",
+          "comment": "test_11",
+          "likes": 11,
+          "disLikes": 21
+        }
+        ]
+    },
+    {
+      "course_id": "12",
+      "course_name": "discrete_mathematics",
+      "faculty": "computing",
+      "area": "artificial_intelligence",
+      "level": "bachelor",
+      "course_ects": 5,
+      "number_of_hours": "60",
+      "semester": "winter",
+      "course_card_link": "http://",
+      "course_comments": [
+        {
+          "comment_id": "new Date().getTime()",
+          "comment_date": "11/12/2021",
+          "comment": "test_12",
+          "likes": 12,
+          "disLikes": 22
+        }
+        ]
+    },
+    {
+      "course_id": "13",
+      "course_name": "discrete_optimization",
+      "faculty": "computing",
+      "area": "artificial_intelligence",
+      "level": "bachelor",
+      "course_ects": 5,
+      "number_of_hours": "60",
+      "semester": "winter",
+      "course_card_link": "http://",
+      "course_comments": [
+        {
+          "comment_id": "new Date().getTime()",
+          "comment_date": "11/12/2021",
+          "comment": "test_13",
+          "likes": 13,
+          "disLikes": 23
+        }
+        ]
+    },
+    {
+      "course_id": "14",
+      "course_name": "graphics",
+      "faculty": "computing",
+      "area": "artificial_intelligence",
+      "level": "bachelor",
+      "course_ects": 3,
+      "number_of_hours": "30",
+      "semester": "summer",
+      "course_card_link": "http://",
+      "course_comments": [
+        {
+          "comment_id": "new Date().getTime()",
+          "comment_date": "10/12/2021",
+          "comment": "test_14",
+          "likes": 14,
+          "disLikes": 24
+        }
+        ]
+    },
+    {
+      "course_id": "15",
+      "course_name": "information_theory",
+      "faculty": "computing",
+      "area": "artificial_intelligence",
+      "level": "bachelor",
+      "course_ects": 3,
+      "number_of_hours": "30",
+      "semester": "winter",
+      "course_card_link": "http://",
+      "course_comments": [
+        {
+          "comment_id": "new Date().getTime()",
+          "comment_date": "12/12/2021",
+          "comment": "test_15",
+          "likes": 15,
+          "disLikes": 25
+        }
+        ]
+    },
+    {
+      "course_id": "16",
+      "course_name": "internet_applications",
+      "faculty": "computing",
+      "area": "artificial_intelligence",
+      "level": "bachelor",
+      "course_ects": 5,
+      "number_of_hours": "60",
+      "semester": "winter",
+      "course_card_link": "http://",
+      "course_comments": [
+        {
+          "comment_id": "new Date().getTime()",
+          "comment_date": "10/12/2021",
+          "comment": "test_16",
+          "likes": 16,
+          "disLikes": 26
+        }
+        ]
+    },
+    {
+      "course_id": "17",
+      "course_name": "introduction_to_mathematics_for_computer_science",
+      "faculty": "computing",
+      "area": "artificial_intelligence",
+      "level": "bachelor",
+      "course_ects": 5,
+      "number_of_hours": "60",
+      "semester": "winter",
+      "course_card_link": "http://",
+      "course_comments": [
+        {
+          "comment_id": "new Date().getTime()",
+          "comment_date": "10/12/2021",
+          "comment": "test_17",
+          "likes": 17,
+          "disLikes": 27
+        }
+        ]
+    },
+    {
+      "course_id": "19",
+      "course_name": "introduction_to_artificial_intelligence",
+      "faculty": "computing",
+      "area": "artificial_intelligence",
+      "level": "bachelor",
+      "course_ects": 3,
+      "number_of_hours": "30",
+      "semester": "winter",
+      "course_card_link": "http://",
+      "course_comments": [
+        {
+          "comment_id": "new Date().getTime()",
+          "comment_date": "12/12/2021",
+          "comment": "test_19",
+          "likes": 19,
+          "disLikes": 29
+        }
+        ]
+    },
+    {
+      "course_id": "18",
+      "course_name": "introduction_to_programming",
+      "faculty": "computing",
+      "area": "artificial_intelligence",
+      "level": "bachelor",
+      "course_ects": 5,
+      "number_of_hours": "60",
+      "semester": "winter",
+      "course_card_link": "http://",
+      "course_comments": [
+        {
+          "comment_id": "new Date().getTime()",
+          "comment_date": "10/12/2021",
+          "comment": "test_18",
+          "likes": 18,
+          "disLikes": 28
+        }
+        ]
+    },
+    {
+      "course_id": "20",
+      "course_name": "object_programming",
+      "faculty": "computing",
+      "area": "artificial_intelligence",
+      "level": "bachelor",
+      "course_ects": 4,
+      "number_of_hours": "45",
+      "semester": "winter",
+      "course_card_link": "http://",
+      "course_comments": [
+        {
+          "comment_id": "new Date().getTime()",
+          "comment_date": "11/12/2021",
+          "comment": "test_20",
+          "likes": 12,
+          "disLikes": 22
+        }
+        ]
+    },
+    {
+      "course_id": "21",
+      "course_name": "operating_systems_with_concurrency_programming",
+      "faculty": "computing",
+      "area": "artificial_intelligence",
+      "level": "bachelor",
+      "course_ects": 5,
+      "number_of_hours": "60",
+      "semester": "summer",
+      "course_card_link": "http://",
+      "course_comments": [
+        {
+          "comment_id": "new Date().getTime()",
+          "comment_date": "11/12/2021",
+          "comment": "test_21",
+          "likes": 11,
+          "disLikes": 21
+        }
+        ]
+    },
+    {
+      "course_id": "22",
+      "course_name": "operational_research",
+      "faculty": "computing",
+      "area": "artificial_intelligence",
+      "level": "bachelor",
+      "course_ects": 5,
+      "number_of_hours": "60",
+      "semester": "winter",
+      "course_card_link": "http://",
+      "course_comments": [
+        {
+          "comment_id": "new Date().getTime()",
+          "comment_date": "11/12/2021",
+          "comment": "test_22",
+          "likes": 12,
+          "disLikes": 22
+        }
+        ]
+    },
+    {
+      "course_id": "23",
+      "course_name": "physical_education",
+      "faculty": "computing",
+      "area": "artificial_intelligence",
+      "level": "bachelor",
+      "course_ects": 0,
+      "number_of_hours": "30",
+      "semester": "winter",
+      "course_card_link": "http://",
+      "course_comments": [
+        {
+          "comment_id": "new Date().getTime()",
+          "comment_date": "10/12/2021",
+          "comment": "test_23",
+          "likes": 13,
+          "disLikes": 23
+        }
+        ]
+    },
+    {
+      "course_id": "24",
+      "course_name": "software_engineering",
+      "faculty": "computing",
+      "area": "artificial_intelligence",
+      "level": "bachelor",
+      "course_ects": 4,
+      "number_of_hours": "60",
+      "semester": "summer",
+      "course_card_link": "http://",
+      "course_comments": [
+        {
+          "comment_id": "new Date().getTime()",
+          "comment_date": "10/12/2021",
+          "comment": "test_24",
+          "likes": 14,
+          "disLikes": 24
+        }
+        ]
+    },
+    {
+      "course_id": "25",
+      "course_name": "spiking_neural_networks",
+      "faculty": "computing",
+      "area": "artificial_intelligence",
+      "level": "bachelor",
+      "course_ects": 3,
+      "number_of_hours": "30",
+      "semester": "winter",
+      "course_card_link": "http://",
+      "course_comments": [
+        {
+          "comment_id": "new Date().getTime()",
+          "comment_date": "11/12/2021",
+          "comment": "test_25",
+          "likes": 15,
+          "disLikes": 25
+        }
+        ]
+    },
+    {
+      "course_id": "26",
+      "course_name": "statistics",
+      "faculty": "computing",
+      "area": "artificial_intelligence",
+      "level": "bachelor",
+      "course_ects": 5,
+      "number_of_hours": "60",
+      "semester": "winter",
+      "course_card_link": "http://",
+      "course_comments": [
+        {
+          "comment_id": "new Date().getTime()",
+          "comment_date": "10/12/2021",
+          "comment": "test_26",
+          "likes": 16,
+          "disLikes": 26
+        }
+        ]
+    }
+],
+  "SE" : [
+    {
+      "course_id": "30",
+      "course_name": "basics_of_ohs",
+      "faculty": "computing",
+      "area": "software_engineering",
+      "level": "master",
+      "course_ects": 0,
+      "number_of_hours": "4",
+      "semester": "winter",
+      "course_card_link": "http://",
+      "course_comments": [
+        {
+          "comment_id": "new Date().getTime()",
+          "comment_date": "07/12/2021",
+          "comment": "test_0",
+          "likes": 4,
+          "disLikes": 5
+        }
+        ]
+    },
+    {
+      "course_id": "31",
+      "course_name": "communication_in_english",
+      "faculty": "computing",
+      "area": "software_engineering",
+      "level": "master",
+      "course_ects": 2,
+      "number_of_hours": "30",
+      "semester": "winter",
+      "course_card_link": "http://",
+      "course_comments": [
+        {
+          "comment_id": "new Date().getTime()",
+          "comment_date": "07/12/2021",
+          "comment": "test_1",
+          "likes": 1,
+          "disLikes": 2
+        }
+        ]
+    },
+    {
+      "course_id": "32",
+      "course_name": "concepts_and_tools_of_modern_enterprise_management",
+      "faculty": "computing",
+      "area": "software_engineering",
+      "level": "master",
+      "course_ects": 3,
+      "number_of_hours": "45",
+      "semester": "winter",
+      "course_card_link": "http://",
+      "course_comments": [
+        {
+          "comment_id": "new Date().getTime()",
+          "comment_date": "07/12/2021",
+          "comment": "test_2",
+          "likes": 4,
+          "disLikes": 5
+        }
+        ]
+    },
+    {
+      "course_id": "33",
+      "course_name": "Diploma_seminar",
+      "faculty": "computing",
+      "area": "software_engineering",
+      "level": "master",
+      "course_ects": 2,
+      "number_of_hours": "30",
+      "semester": "winter",
+      "course_card_link": "http://",
+      "course_comments": [
+        {
+          "comment_id": "new Date().getTime()",
+          "comment_date": "07/12/2021",
+          "comment": "test_3",
+          "likes": 1,
+          "disLikes": 2
+        }
+        ]
+    },
+    {
+      "course_id": "34",
+      "course_name": "foreign_language_polish",
+      "faculty": "computing",
+      "area": "software_engineering",
+      "level": "master",
+      "course_ects": 2,
+      "number_of_hours": "30",
+      "semester": "summer",
+      "course_card_link": "http://",
+      "course_comments": [
+        {
+          "comment_id": "new Date().getTime()",
+          "comment_date": "07/12/2021",
+          "comment": "test_4",
+          "likes": 4,
+          "disLikes": 5
+        }
+        ]
+    },
+    {
+      "course_id": "35",
+      "course_name": "frontend_development",
+      "faculty": "computing",
+      "area": "software_engineering",
+      "level": "master",
+      "course_ects": 5,
+      "number_of_hours": "60",
+      "semester": "winter",
+      "course_card_link": "http://",
+      "course_comments": [
+        {
+          "comment_id": "new Date().getTime()",
+          "comment_date": "07/12/2021",
+          "comment": "test_5",
+          "likes": 1,
+          "disLikes": 2
+        }
+        ]
+    },
+    {
+      "course_id": "36",
+      "course_name": "intercultural_communication",
+      "faculty": "computing",
+      "area": "software_engineering",
+      "level": "master",
+      "course_ects": 2,
+      "number_of_hours": "30",
+      "semester": "summer",
+      "course_card_link": "http://",
+      "course_comments": [
+        {
+          "comment_id": "new Date().getTime()",
+          "comment_date": "07/12/2021",
+          "comment": "test_6",
+          "likes": 4,
+          "disLikes": 5
+        }
+        ]
+    },
+    {
+      "course_id": "37",
+      "course_name": "basics_of_ohs",
+      "faculty": "computing",
+      "area": "software_engineering",
+      "level": "master",
+      "course_ects": 2,
+      "number_of_hours": "30",
+      "semester": "winter",
+      "course_card_link": "http://",
+      "course_comments": [
+        {
+          "comment_id": "new Date().getTime()",
+          "comment_date": "07/12/2021",
+          "comment": "test_7",
+          "likes": 1,
+          "disLikes": 2
+        }
+        ]
+    },
+    {
+      "course_id": "38",
+      "course_name": "new_trends_in_multimedia_technologies",
+      "faculty": "computing",
+      "area": "software_engineering",
+      "level": "master",
+      "course_ects": 3,
+      "number_of_hours": "45",
+      "semester": "winter",
+      "course_card_link": "http://",
+      "course_comments": [
+        {
+          "comment_id": "new Date().getTime()",
+          "comment_date": "07/12/2021",
+          "comment": "test_8",
+          "likes": 4,
+          "disLikes": 5
+        }
+        ]
+    },
+    {
+      "course_id": "39",
+      "course_name": "quality_management_and_experimental_software_engineering",
+      "faculty": "computing",
+      "area": "software_engineering",
+      "level": "master",
+      "course_ects": 5,
+      "number_of_hours": "60",
+      "semester": "summer",
+      "course_card_link": "http://",
+      "course_comments": [
+        {
+          "comment_id": "new Date().getTime()",
+          "comment_date": "06/12/2021",
+          "comment": "test_9",
+          "likes": 1,
+          "disLikes": 2
+        }
+        ]
+    },
+    {
+      "course_id": "40",
+      "course_name": "research_project",
+      "faculty": "computing",
+      "area": "software_engineering",
+      "level": "master",
+      "course_ects": 2,
+      "number_of_hours": "30",
+      "semester": "summer",
+      "course_card_link": "http://",
+      "course_comments": [
+        {
+          "comment_id": "new Date().getTime()",
+          "comment_date": "02/12/2021",
+          "comment": "test_10",
+          "likes": 4,
+          "disLikes": 5
+        }
+        ]
+    },
+    {
+      "course_id": "41",
+      "course_name": "software_architecture _and_verification",
+      "faculty": "computing",
+      "area": "software_engineering",
+      "level": "master",
+      "course_ects": 6,
+      "number_of_hours": "60",
+      "semester": "winter",
+      "course_card_link": "http://",
+      "course_comments": [
+        {
+          "comment_id": "new Date().getTime()",
+          "comment_date": "01/12/2021",
+          "comment": "test_11",
+          "likes": 2,
+          "disLikes": 2
+        }
+        ]
+    },
+    {
+      "course_id": "42",
+      "course_name": "software_design_and_modeling",
+      "faculty": "computing",
+      "area": "software_engineering",
+      "level": "master",
+      "course_ects": 4,
+      "number_of_hours": "60",
+      "semester": "winter",
+      "course_card_link": "http://",
+      "course_comments": [
+        {
+          "comment_id": "new Date().getTime()",
+          "comment_date": "08/12/2021",
+          "comment": "test_12",
+          "likes": 9,
+          "disLikes": 9
+        }
+        ]
+    },
+    {
+      "course_id": "43",
+      "course_name": "software_development_studio_1",
+      "faculty": "computing",
+      "area": "software_engineering",
+      "level": "master",
+      "course_ects": 6,
+      "number_of_hours": "60",
+      "semester": "summer",
+      "course_card_link": "http://",
+      "course_comments": [
+        {
+          "comment_id": "new Date().getTime()",
+          "comment_date": "04/12/2021",
+          "comment": "test_13",
+          "likes": 10,
+          "disLikes": 13
+        }
+        ]
+    },
+    {
+      "course_id": "44",
+      "course_name": "software_development_studio_2",
+      "faculty": "computing",
+      "area": "software_engineering",
+      "level": "master",
+      "course_ects": 6,
+      "number_of_hours": "60",
+      "semester": "winter",
+      "course_card_link": "http://",
+      "course_comments": [
+        {
+          "comment_id": "new Date().getTime()",
+          "comment_date": "02/12/2021",
+          "comment": "test_14",
+          "likes": 2,
+          "disLikes": 1
+        }
+        ]
+    },
+    {
+      "course_id": "45",
+      "course_name": "software_evolution_and_maintenance",
+      "faculty": "computing",
+      "area": "software_engineering",
+      "level": "master",
+      "course_ects": 6,
+      "number_of_hours": "60",
+      "semester": "winter",
+      "course_card_link": "http://",
+      "course_comments": [
+        {
+          "comment_id": "new Date().getTime()",
+          "comment_date": "01/12/2021",
+          "comment": "test_15",
+          "likes": 15,
+          "disLikes": 11
+        }
+        ]
+    },
+    {
+      "course_id": "46",
+      "course_name": "technologies_of_software_development",
+      "faculty": "computing",
+      "area": "software_engineering",
+      "level": "master",
+      "course_ects": 6,
+      "number_of_hours": "60",
+      "semester": "summer",
+      "course_card_link": "http://",
+      "course_comments": [
+        {
+          "comment_id": "new Date().getTime()",
+          "comment_date": "07/12/2021",
+          "comment": "test_16",
+          "likes": 4,
+          "disLikes": 5
+        }
+        ]
+    },
+    {
+      "course_id": "47",
+      "course_name": "writing_scientific_and_technical_papers",
+      "faculty": "computing",
+      "area": "software_engineering",
+      "level": "master",
+      "course_ects": 2,
+      "number_of_hours": "30",
+      "semester": "winter",
+      "course_card_link": "http://",
+      "course_comments": [
+        {
+          "comment_id": "new Date().getTime()",
+          "comment_date": "03/12/2021",
+          "comment": "test_17",
+          "likes": 8,
+          "disLikes": 3
+        }
+        ]
+    }
+]
+}

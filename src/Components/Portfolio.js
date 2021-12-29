@@ -3,7 +3,9 @@ import Zmage from "react-zmage";
 import Fade from "react-reveal";
 import Button from '@mui/material/Button';
 import LaDialog from './CreateLaComponents/LaDialog'
-import StudentInformation from './CreateLaComponents/StudentInformation'
+import StudentInformation from './CreateLaComponents/StudentInformation';
+
+
 let id = 0;
 class Portfolio extends Component {
   render() {
@@ -30,6 +32,8 @@ class Portfolio extends Component {
               <h1>Need help with your Learning Agreement?</h1>
               <LaDialog></LaDialog>
             </div>
+
+
           </div>
         </Fade>
       </section>
