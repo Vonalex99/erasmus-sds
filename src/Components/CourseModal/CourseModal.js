@@ -12,6 +12,10 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import Select from '@mui/material/Select';
 import Switch from '@mui/material/Switch';
+import { Container } from "semantic-ui-react";
+
+import Example from './Example'
+
 
 export default function CourseModal(props) {
   const [open, setOpen] = React.useState(props.toShow !== "" ? "true" : "false");
@@ -33,9 +37,12 @@ export default function CourseModal(props) {
       >
         <DialogTitle sx={{fontSize:"20px"}}>{info.course_name}</DialogTitle>
         <DialogContent>
-          <DialogContentText>
-            You can set my maximum width and whether to adapt or not.
-          </DialogContentText>
+          
+
+
+          <Example></Example>
+
+
 
         </DialogContent>
         <DialogActions>
