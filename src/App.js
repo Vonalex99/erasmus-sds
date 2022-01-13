@@ -8,56 +8,24 @@ import About from "./Components/About";
 import Resume from "./Components/Resume";
 import Contact from "./Components/Contact";
 import Portfolio from "./Components/Portfolio";
+import database from './Components/CreateLaComponents/Courses.json'
+import db from './firebase.js'
+import { ref, onValue} from "firebase/database";
 
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-
-import { getDatabase, ref, onValue } from "firebase/database";
-import { getAuth } from "firebase/auth";
-import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
-
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyCcTC0A2npdsGwpgbrt6rgqOjge2z4zY0A",
-  authDomain: "sds2-erasmus.firebaseapp.com",
-  projectId: "sds2-erasmus",
-  storageBucket: "sds2-erasmus.appspot.com",
-  messagingSenderId: "203451554480",
-  appId: "1:203451554480:web:8f56e3cff3f243ee4db975",
-  measurementId: "G-1PM1TNEPXL"
-};
-
-// Initialize Firebase
-const appInit = initializeApp(firebaseConfig);
-const analyticsInit = getAnalytics(appInit);
-
-const db = getFirestore(appInit);
-
-
+console.log(db)
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
       foo: "bar",
-      resumeData: {}
+      resumeData: {},
+      database: []
     };
 
     ReactGA.initialize("UA-110570651-1");
     ReactGA.pageview(window.location.pathname);
   }
-
-  
-  async getCities() {
-    const citySnapshot = await this.appInit.database();
-    return citySnapshot;
-  }
-  
 
   getResumeData() {
     $.ajax({
@@ -76,17 +44,27 @@ class App extends Component {
 
   componentDidMount() {
     this.getResumeData();
+
+    const starCountRef = ref(db);
+    var data = {}
+    onValue(starCountRef, (snapshot) => {
+      data = snapshot.val();
+      this.setState({ database: data });
+    });
+
+    console.log(data)
+
+    
+
   }
-
-
 
   render() {
     return (
       <div className="App">
         <Header data={this.state.resumeData.main} />
         <About data={this.state.resumeData.main} />
-        <Resume data={this.state.resumeData.resume} />
-        <Portfolio data={this.state.resumeData.portfolio} />
+        <Resume data={this.state.resumeData.resume} database={this.state.database}/>
+        <Portfolio data={this.state.resumeData.portfolio} database={this.state.database} />
         <Contact data={this.state.resumeData.main} />
         <Footer data={this.state.resumeData.main} />
       </div>

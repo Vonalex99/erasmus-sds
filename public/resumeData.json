@@ -17,28 +17,23 @@
         "resumedownload": "http://timbakerdev.com",
         "social": [{
                 "name": "facebook",
-                "url": "https://github.com/nordicgiant2/react-nice-resume",
+                "url": "https://www.facebook.com/Politechnika.Poznanska",
                 "className": "fa fa-facebook"
             },
             {
                 "name": "twitter",
-                "url": "http://twitter.com",
+                "url": "https://twitter.com/put_poznan",
                 "className": "fa fa-twitter"
             },
             {
                 "name": "linkedin",
-                "url": "https://www.linkedin.com/in/tim-baker-8420009a/",
+                "url": "https://www.linkedin.com/school/politechnika-pozna%C5%84ska/",
                 "className": "fa fa-linkedin"
             },
             {
                 "name": "instagram",
-                "url": "http://instagram.com/tbaker_x",
+                "url": "https://www.instagram.com/politechnika.poznanska/",
                 "className": "fa fa-instagram"
-            },
-            {
-                "name": "github",
-                "url": "https://github.com/nordicgiant2/react-nice-resume",
-                "className": "fa fa-github"
             }
         ]
     },

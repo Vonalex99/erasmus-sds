@@ -14,10 +14,19 @@ import Item from './Item';
 export default function DialogSelect(props) {
   const [open, setOpen] = React.useState(false);
   const [age, setAge] = React.useState('');
-  const [courses, setCourses] = React.useState(Courses);
+  const [courses, setCourses] = React.useState(props.database);
+
 
   const handleChange = (event) => {
+    console.log(event.target.value)
+
+    console.log(props.database['AI'])
+
+
+    console.log(props.database[event.target.value])
+
     setAge((event.target.value) || '');
+
   };
 
   const handleClickOpen = () => {
@@ -65,15 +74,15 @@ export default function DialogSelect(props) {
                 input={<OutlinedInput label="Age" id="demo-dialog-native" />}
               >
                 { age === '' && <option aria-label="None" value="">Select the field of Studies</option>}
-                <option value={"AI"}>Artificial Inteligence</option>
-                <option value={"SE"}>Software Engineering</option>
+                <option value={'AI'}>Artificial Inteligence</option>
+                <option value={'SE'}>Software Engineering</option>
               </Select>
             </FormControl>
           </Box>
 
           {age !== '' && 
             <div style={{marginLeft: '10px', display: 'flex', width: 520, flexWrap: "wrap", justifyContent: "center", gap: "20px" }}>
-              {courses[age].map((item) => {
+              {props.database[age].map((item) => {
                 return <Item name={item.course_name} id={item.course_id} select={changeSelect} idSel={select} ects={item.course_ects}></Item>
               })}
               

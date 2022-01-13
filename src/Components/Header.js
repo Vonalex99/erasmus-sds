@@ -1,8 +1,13 @@
 import React, { Component } from "react";
+import ReactGA from "react-ga";
+
 import ParticlesBg from "particles-bg";
 import Fade from "react-reveal";
-
+import SignInModal from './LogSignIn/SignInModal';
+import AuxSignIn from './LogSignIn/AuxSignIn'
 class Header extends Component {
+
+
   render() {
     if (!this.props.data) return null;
 
@@ -53,6 +58,8 @@ class Header extends Component {
                 Contact
               </a>
             </li>
+
+            <AuxSignIn></AuxSignIn>
           </ul>
         </nav>
 
@@ -65,8 +72,7 @@ class Header extends Component {
               <h3>{description}.</h3>
             </Fade>
             <hr />
-            <Fade bottom duration={2000}>
-            </Fade>
+            <Fade bottom duration={2000}></Fade>
           </div>
         </div>
 

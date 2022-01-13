@@ -13,7 +13,7 @@ import ProposedMobility from "./ProposedMobility";
 import Commitment from "./Commitment";
 import LaComponent from "./LaComponent";
 
-export default function MaxWidthDialog() {
+export default function MaxWidthDialog(props) {
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
@@ -65,6 +65,8 @@ export default function MaxWidthDialog() {
     ]);
   };
 
+  console.log(props.database)
+
   return (
     <React.Fragment>
       <Button
@@ -115,7 +117,7 @@ export default function MaxWidthDialog() {
 
             {page == 2 && <ReceivingInfo></ReceivingInfo>}
 
-            {page == 3 && <ProposedMobility></ProposedMobility>}
+            {page == 3 && <ProposedMobility  database={props.database}></ProposedMobility>}
 
             {page == 4 && <Commitment></Commitment>}
           </div>

@@ -5,7 +5,7 @@ import DialogSelectCopy from './DialogSelectCopy';
 import CoursesAdded from './CoursesAdded';
 
 let ids = 1;
-export default function ProposedMobility() {
+export default function ProposedMobility(props) {
   const [id, setId] = React.useState("");
   const [ects, setEcts] = React.useState("");
 
@@ -149,7 +149,7 @@ export default function ProposedMobility() {
               </div>
             }
             {id === "" &&
-              <DialogSelect finish={finish}></DialogSelect>
+              <DialogSelect finish={finish} database={props.database}></DialogSelect>
             }
           </div>
           <div style={{fontSize: "13px", color: "black", width: '280px', marginLeft: '60px'}}>
@@ -168,7 +168,7 @@ export default function ProposedMobility() {
                 <div style={{marginLeft: '10px', marginTop: '3px', overflowWrap: 'break-word',  width: "270px"}}>
                 <div style={{display: "flex"}}><div style={{fontWeight: "bold", marginRight: '8px'}}>Ects: </div>{ects}</div>
                 </div>
-                <DialogSelectCopy finish={finish}></DialogSelectCopy>
+                <DialogSelectCopy finish={finish}  database={props.database}></DialogSelectCopy>
 
               </div>
               </>

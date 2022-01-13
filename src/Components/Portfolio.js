@@ -24,13 +24,14 @@ class Portfolio extends Component {
       );
     });
 
+
     return (
       <section id="portfolio">
         <Fade left duration={1000} distance="40px">
           <div className="row">
             <div className="twelve columns collapsed" >
               <h1>Need help with your Learning Agreement?</h1>
-              <LaDialog></LaDialog>
+              <LaDialog database={this.props.database}></LaDialog>
             </div>
 
 
