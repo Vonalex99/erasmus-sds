@@ -59,7 +59,7 @@ class Header extends Component {
               </a>
             </li>
 
-            <AuxSignIn></AuxSignIn>
+            <AuxSignIn db={this.props.db}></AuxSignIn>
           </ul>
         </nav>
 

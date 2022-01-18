@@ -4,6 +4,9 @@ import * as React from 'react';
 import SignInModal from './SignInModal';
 import RegisterInModal from './RegisterInModal';
 
+import { ref, onValue} from "firebase/database";
+
+
 export default function CourseModal(props) {
     const [open, setOpen] = React.useState(false);
     const [openReg, setOpenReg] = React.useState(false);

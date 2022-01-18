@@ -26,6 +26,7 @@ export default function CourseModal(props) {
     props.closeModal()
   };
 
+  console.log(props.toShow)
 
   return (
     <React.Fragment>
@@ -40,7 +41,7 @@ export default function CourseModal(props) {
           
 
 
-          <Example></Example>
+          {/**<Example></Example>**/}
 
 
 
