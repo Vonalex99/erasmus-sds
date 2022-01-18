@@ -26,6 +26,7 @@ export default function CourseModal(props) {
     props.closeModal()
   };
 
+  console.log("here")
   console.log(props.toShow)
 
   return (
@@ -36,7 +37,15 @@ export default function CourseModal(props) {
         open={open}
         onClose={handleClose}
       >
-        <DialogTitle sx={{fontSize:"20px"}}>{info.course_name}</DialogTitle>
+        <DialogTitle sx={{fontSize:"26px", fontWeight:"bold"}}>{info.course_name[0].toUpperCase() + info.course_name.slice(1)}</DialogTitle>
+        <DialogTitle sx={{fontSize:"20px"}}><strong>Degree of Education: </strong>{info.level[0].toUpperCase() + info.level.slice(1)}</DialogTitle>
+        <DialogTitle sx={{fontSize:"20px"}}><strong>ECTS:</strong> {info.course_ects}</DialogTitle>
+        <DialogTitle sx={{fontSize:"20px"}}><strong>Semester: </strong> {info.semester[0].toUpperCase() + info.semester.slice(1)}</DialogTitle>
+        <DialogTitle sx={{fontSize:"20px"}}><strong>Number of hours: </strong> {info.number_of_hours}</DialogTitle>
+
+        <DialogTitle sx={{fontSize:"20px"}}>{<a href = {info.course_card_link}>Further Details</a>}</DialogTitle>
+
+
         <DialogContent>
           
 
