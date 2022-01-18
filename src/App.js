@@ -101,8 +101,8 @@ class App extends Component {
       <div className="App">
         <Header auth={auth} data={this.state.resumeData.main} db={db} logInUser={this.state.logInUser} logIn={this.login} />
         <About data={this.state.resumeData.main} />
-        <Resume data={this.state.resumeData.resume} database={this.state.database}/>
-        <Portfolio data={this.state.resumeData.portfolio} database={this.state.database} />
+        <Resume auth={auth} data={this.state.resumeData.resume} database={this.state.database}/>
+        <Portfolio  auth={auth} data={this.state.resumeData.portfolio} database={this.state.database} />
         <Contact data={this.state.resumeData.main} />
         <Footer data={this.state.resumeData.main} />
       </div>

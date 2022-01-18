@@ -15,19 +15,37 @@ import Switch from '@mui/material/Switch';
 import { Container } from "semantic-ui-react";
 
 import Example from './Example'
+import { getAuth, onAuthStateChanged } from "firebase/auth";
 
 
 export default function CourseModal(props) {
   const [open, setOpen] = React.useState(props.toShow !== "" ? "true" : "false");
   const [info, setInfo] = React.useState(props.toShow);
+  const [user, setuser] = React.useState("");
 
   const handleClose = () => {
     setOpen(false);
     props.closeModal()
   };
 
-  console.log("here")
-  console.log(props.toShow)
+    const auth = props.auth
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        // User is signed in, see docs for a list of available properties
+        // https://firebase.google.com/docs/reference/js/firebase.User
+        const uid = user.email;
+        console.log(uid)
+        setuser(uid)
+        console.log("asdasdasdasdasdasdasdasdsa")
+        // ...
+      } else {
+        console.log("User is signed out")
+        setuser("")
+
+        // User is signed out
+        // ...
+      }
+    });
 
   return (
     <React.Fragment>
@@ -45,12 +63,14 @@ export default function CourseModal(props) {
 
         <DialogTitle sx={{fontSize:"20px"}}>{<a href = {info.course_card_link}>Further Details</a>}</DialogTitle>
 
+        <div style={{marginLeft: "25px"}}>
+          <Example comment={info.course_comments} user={user}></Example>
+        </div>
 
         <DialogContent>
           
 
 
-          <Example comment={info.course_comments}></Example>
 
 
 

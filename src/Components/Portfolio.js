@@ -31,7 +31,7 @@ class Portfolio extends Component {
           <div className="row">
             <div className="twelve columns collapsed" >
               <h1>Need help with your Learning Agreement?</h1>
-              <LaDialog database={this.props.database}></LaDialog>
+              <LaDialog  auth={this.props.auth} database={this.props.database}></LaDialog>
             </div>
 
 

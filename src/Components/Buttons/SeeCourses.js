@@ -30,15 +30,36 @@ export default function SeeCourses(props) {
   const presentCourses = (sem) => {
     setpos(2);
     setseeSem(sem)
+
     
-    if(sem === "Summer semester") {
-      props.database["SE"].filter(data => data["semester"] !== "winter").map((item)=>{
-        toRetrive.push(item)
-      })
+    if(seeCourses === "Software Engineering") {
+
+      console.log("summer")
+      console.log(seeSem)
+
+      if(sem.includes("Winter")) {
+        console.log("winter")
+
+        props.database["SE"].filter(data => data["semester"] !== "summer").map((item)=>{
+          toRetrive.push(item)
+        })
+      }else {
+        props.database["SE"].filter(data => data["semester"] !== "winter").map((item)=>{
+          toRetrive.push(item)
+        })
+      }
+
+
     } else {
-      props.database["AI"].filter(data => data["semester"] !== "summer").map((item)=>{
-        toRetrive.push(item)
-      })
+      if(sem.includes("Winter")) {
+        props.database["AI"].filter(data => data["semester"] !== "summer").map((item)=>{
+          toRetrive.push(item)
+        })
+      }else {
+        props.database["AI"].filter(data => data["semester"] !== "winter").map((item)=>{
+          toRetrive.push(item)
+        })
+      }
     }
 
     settoSHhow(toRetrive)
@@ -115,7 +136,7 @@ export default function SeeCourses(props) {
 
       {pos === 0 && <Button presentSemester={presentSemester} />}
       {pos === 1 && <ButtonSum presentCourses={presentCourses} />}
-      {pos === 2 && <ButtonCourses toRetrive={toSHhow}/>}
+      {pos === 2 && <ButtonCourses auth={props.auth} toRetrive={toSHhow}/>}
 
     </div>
   );

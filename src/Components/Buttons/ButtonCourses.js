@@ -133,7 +133,7 @@ export default function ButtonSum(props) {
         </ImageButton>
       ))}
     </Box>
-    {courseToShow !== "" && <CourseModal toShow={courseToShow} closeModal={closeModal}/>}
+    {courseToShow !== "" && <CourseModal auth={props.auth} toShow={courseToShow} closeModal={closeModal}/>}
     </>
   );
 }

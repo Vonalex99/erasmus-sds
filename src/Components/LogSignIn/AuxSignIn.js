@@ -57,10 +57,12 @@ export default function CourseModal(props) {
       }
     };
 
-    const logout = () => {
-      setUser("")
-    }
   
+    const logout = async () => {
+      await signOut(props.auth);
+      setUser("")
+
+    };
 
   return (
     <>

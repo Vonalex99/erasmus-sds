@@ -56,7 +56,7 @@ class Resume extends Component {
 
 
 
-            <SeeCourses database={this.props.database}></SeeCourses>          
+            <SeeCourses auth={this.props.auth} database={this.props.database}></SeeCourses>          
           
           </div>
         </Slide>

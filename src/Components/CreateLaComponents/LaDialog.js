@@ -5,6 +5,7 @@ import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import DialogTitle from "@mui/material/DialogTitle";
 import Step from "./Step";
+import { getAuth, onAuthStateChanged } from "firebase/auth";
 
 import StudentInformation from "./StudentInformation";
 import SendingInfo from "./SendingInfo";
@@ -15,9 +16,36 @@ import LaComponent from "./LaComponent";
 
 export default function MaxWidthDialog(props) {
   const [open, setOpen] = React.useState(false);
+  const [user, setuser] = React.useState("");
+
+  const auth = props.auth
+  onAuthStateChanged(auth, (user) => {
+    if (user) {
+      // User is signed in, see docs for a list of available properties
+      // https://firebase.google.com/docs/reference/js/firebase.User
+      const uid = user.email;
+      console.log(uid)
+      setuser(uid)
+      console.log("asdasdasdasdasdasdasdasdsa")
+      // ...
+    } else {
+      console.log("User is signed out")
+      setuser("")
+
+      // User is signed out
+      // ...
+    }
+  });
+
+
 
   const handleClickOpen = () => {
-    setOpen(true);
+    if(user !== "") {
+      setOpen(true);
+
+    } else {
+      alert("No user is logged in")
+    }
   };
 
   const handleClose = () => {
