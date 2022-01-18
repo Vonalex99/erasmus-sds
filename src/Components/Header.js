@@ -7,10 +7,11 @@ import SignInModal from './LogSignIn/SignInModal';
 import AuxSignIn from './LogSignIn/AuxSignIn'
 class Header extends Component {
 
-
+  
   render() {
-    if (!this.props.data) return null;
 
+    if (!this.props.data) return null;
+    console.log(this.props.logInUser)
     const project = this.props.data.project;
     const github = this.props.data.github;
     const name = this.props.data.name;
@@ -59,7 +60,7 @@ class Header extends Component {
               </a>
             </li>
 
-            <AuxSignIn db={this.props.db}></AuxSignIn>
+            {this.props.logInUser==="noUser"?<AuxSignIn auth={this.props.auth} db={this.props.db} logIn={this.props.logIn}></AuxSignIn>: <></>}
           </ul>
         </nav>
 

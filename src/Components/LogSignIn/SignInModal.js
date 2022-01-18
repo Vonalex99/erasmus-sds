@@ -15,8 +15,15 @@ export default function CourseModal(props) {
 
   const [open, setOpen] = React.useState(props.open);
 
-  const handleClose = () => {
+
+
+  const handleClose = (email, pass) => {
     props.close()
+
+    console.log(email)
+    props.logIn(email,pass)
+
+    
   };
 
 
@@ -30,7 +37,7 @@ export default function CourseModal(props) {
       >
         <DialogTitle sx={{fontSize:"20px"}}>{""}</DialogTitle>
         <DialogContent>
-          <SignIn change={props.change}></SignIn>
+          <SignIn change={props.change} logIn={props.logIn} close={handleClose}></SignIn>
 
         </DialogContent>
         <DialogActions>

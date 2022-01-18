@@ -11,16 +11,25 @@ import Portfolio from "./Components/Portfolio";
 import database from './Components/CreateLaComponents/Courses.json'
 import db from './firebase.js'
 import { ref, onValue} from "firebase/database";
-
+import {auth} from './firebase'
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  onAuthStateChanged,
+  signOut,
+} from "firebase/auth";
 console.log(db)
-
+var user = "noUser"
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
       foo: "bar",
       resumeData: {},
-      database: []
+      database: [],
+      logInUser: "noUser",
+      loginEmail: "",
+      loginPassword: ""
     };
 
     ReactGA.initialize("UA-110570651-1");
@@ -39,6 +48,35 @@ class App extends Component {
         console.log(err);
         alert(err);
       }
+    });
+  }
+
+  async login(loginEmail, loginPassword) {
+    console.log(loginEmail)
+    console.log(loginPassword)
+    var user
+    try {
+      var user = await signInWithEmailAndPassword(
+        auth,
+        loginEmail,
+        loginPassword
+      );
+      console.log(user);
+      
+    } catch (error) {
+      console.log(error.message);
+      alert(error.message)
+    }
+
+    
+  };
+
+  ola(user) {
+    const starCountRef = ref(db);
+    var data = {}
+    onValue(starCountRef, (snapshot) => {
+      data = snapshot.val();
+      this.setState({logInUser: user})
     });
   }
 
@@ -61,7 +99,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header data={this.state.resumeData.main} db={db} />
+        <Header auth={auth} data={this.state.resumeData.main} db={db} logInUser={this.state.logInUser} logIn={this.login} />
         <About data={this.state.resumeData.main} />
         <Resume data={this.state.resumeData.resume} database={this.state.database}/>
         <Portfolio data={this.state.resumeData.portfolio} database={this.state.database} />

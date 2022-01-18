@@ -41,7 +41,7 @@ export default function CourseModal(props) {
           
 
 
-          {/**<Example></Example>**/}
+          <Example comment={info.course_comments}></Example>
 
 
 

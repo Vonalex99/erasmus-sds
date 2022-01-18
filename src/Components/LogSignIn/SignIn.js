@@ -34,26 +34,34 @@ function Copyright(props) {
 const theme = createTheme();
 
 export default function SignIn(props) {
+
+
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     // eslint-disable-next-line no-console
     console.log({
-      email: data.get("email"),
-      password: data.get("password"),
+      email: email,
+      password: pass,
     });
+
+    props.close(email, pass)
+
   };
 
   const change = () => {
     props.change();
   };
-  const [firstName, setfirstName] = React.useState("");
-  const [secondName, setsecondName] = React.useState("");
+  const [email, setemail] = React.useState("");
+  const [pass, setsecondName] = React.useState("");
 
-  const changeFirst = (event) => {
-    setfirstName(event.target.value);
-    props.setfirstName(event.target.value);
-  };
+  const handleChange = (event) => {
+    setemail(event.target.value)
+  }
+  const handleChange2 = (event) => {
+    setsecondName(event.target.value)
+  }
+  
 
   const changeSecond = (event) => {
     setsecondName(event.target.value);
@@ -97,6 +105,8 @@ export default function SignIn(props) {
                 </div>
                 <input
                   type="text"
+                  value={email}
+                  onChange={handleChange}
                   placeholder="email"
                   style={{
                     borderRadius: "4px",
@@ -153,6 +163,8 @@ export default function SignIn(props) {
                 </div>
                 <input
                   type="password"
+                  value={pass}
+                  onChange={handleChange2}
                   placeholder="password"
                   style={{
                     borderRadius: "4px",
